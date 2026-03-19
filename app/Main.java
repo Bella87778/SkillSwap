@@ -21,7 +21,7 @@ public class Main {
         comandi.put("addr", Main::addRequest);
         comandi.put("print", Main::printList);
         comandi.put("out", Main::exit);
-
+        
         try (Scanner scanner = new Scanner(System.in)) {
             while (uscita != false) {
 
