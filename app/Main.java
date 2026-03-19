@@ -1,4 +1,4 @@
-package Skillswap.app;
+package SkillSwap.app;
 
 import java.util.*;
 import Skillswap.domain.*;

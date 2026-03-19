@@ -1,4 +1,4 @@
-package Skillswap.domain;
+package SkillSwap.domain;
 
 import java.time.LocalDateTime;
 import java.util.LinkedList;
