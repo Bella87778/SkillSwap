@@ -1,7 +1,5 @@
 package SkillSwap.domain;
 
-import java.util.LinkedList;
-
 public class Skills {
 
     private String skill_id;
@@ -14,25 +12,52 @@ public class Skills {
         this.category = category;
     }
 
-    LinkedList<String> skills = new LinkedList<>();
-
     @Override
     public boolean equals(Object o) {
-        if (o instanceof Studente altro) {
-            return this.skill_id.equals(o);
+        if (this == o) {
+            return true;
         }
-        return false;
+        if (!(o instanceof Skills altro)) {
+            return false;
+        }
+        return this.skill_id.equals(altro.skill_id);
     }
 
     @Override
     public int hashCode() {
-        int var1 = 17;
-        var1 = var1 * 31 + skill_id.hashCode();
-        return var1;
+        return skill_id.hashCode();
     }
 
     @Override
     public String toString() {
-        return name + skill_id;
+        return "Skill{"
+                + "id='" + skill_id + '\''
+                + ", name='" + name + '\''
+                + ", category='" + category + '\''
+                + '}';
+    }
+
+    public String getID() {
+        return skill_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setSkill_id(String skill_id) {
+        this.skill_id = skill_id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }
