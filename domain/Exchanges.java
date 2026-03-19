@@ -39,7 +39,6 @@ public class Exchanges {
     }
 
     @Override
-
     public String toString() {
         return exchange_id;
     }

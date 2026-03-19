@@ -32,7 +32,6 @@ public class Skills {
     }
 
     @Override
-
     public String toString() {
         return name + skill_id;
     }

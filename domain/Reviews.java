@@ -43,7 +43,6 @@ public class Reviews {
     }
 
     @Override
-
     public String toString() {
         return review_id;
     }

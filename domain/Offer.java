@@ -38,7 +38,6 @@ public class Offer {
     }
 
     @Override
-
     public String toString() {
         return offer_id;
     }

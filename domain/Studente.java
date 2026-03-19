@@ -38,7 +38,6 @@ public class Studente {
     }
 
     @Override
-
     public String toString(){
         return nome + student_id;
     }
