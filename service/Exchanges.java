@@ -1,19 +1,19 @@
-package SkillSwap.domain;
+package SkillSwap.service;
 
 import java.time.LocalDateTime;
 
 public class Exchanges {
 
-    private String exchange_id;
+    private String exchangeId;
     private String offer_id;
     private String request_id;
     private String status;
     private LocalDateTime created_at;
     private LocalDateTime closed_at;
 
-    public Exchanges(String exchange_id, String offer_id, String request_id, String status, LocalDateTime created_at,
+    public Exchanges(String exchangeId, String offer_id, String request_id, String status, LocalDateTime created_at,
             LocalDateTime closed_at) {
-        this.exchange_id = exchange_id;
+        this.exchangeId = exchangeId;
         this.offer_id = offer_id;
         this.request_id = request_id;
         this.status = status;
@@ -22,7 +22,7 @@ public class Exchanges {
     }
 
     public String getID() {
-        return exchange_id;
+        return exchangeId;
     }
 
     @Override
@@ -33,18 +33,18 @@ public class Exchanges {
         if (!(o instanceof Exchanges altro)) {
             return false;
         }
-        return this.exchange_id.equals(altro.exchange_id);
+        return this.exchangeId.equals(altro.exchangeId);
     }
 
     @Override
     public int hashCode() {
-        return exchange_id.hashCode();
+        return exchangeId.hashCode();
     }
 
     @Override
     public String toString() {
         return "Exchange{"
-                + "id='" + exchange_id + '\''
+                + "id='" + exchangeId + '\''
                 + ", offer_id='" + offer_id + '\''
                 + ", request_id='" + request_id + '\''
                 + ", status='" + status + '\''
@@ -53,12 +53,12 @@ public class Exchanges {
                 + '}';
     }
 
-    public String getExchange_id() {
-        return exchange_id;
+    public String getExchangeId() {
+        return exchangeId;
     }
 
-    public void setExchange_id(String exchange_id) {
-        this.exchange_id = exchange_id;
+    public void setExchangeId(String exchangeId) {
+        this.exchangeId = exchangeId;
     }
 
     public String getOffer_id() {

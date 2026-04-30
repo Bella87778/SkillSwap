@@ -1,7 +1,12 @@
 package SkillSwap.app;
 
 import SkillSwap.domain.*;
+import SkillSwap.service.Exchanges;
+import SkillSwap.service.Offer;
+import SkillSwap.service.Requests;
 import java.util.*;
+
+
 
 public class Main {
 

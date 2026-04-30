@@ -1,25 +1,23 @@
-package SkillSwap.domain;
+package SkillSwap.service;
 
-public class Offer {
+public class Requests {
 
-    private String offer_id;
+    private String request_id;
     private String student_id;
     private String skill_id;
-    private String level;
+    private String min_level;
     private String note;
-    private String active;
 
-    public Offer(String offer_id, String student_id, String skill_id, String level, String note, String active) {
-        this.offer_id = offer_id;
+    public Requests(String request_id, String student_id, String skill_id, String min_level, String note) {
+        this.request_id = request_id;
         this.student_id = student_id;
         this.skill_id = skill_id;
-        this.level = level;
+        this.min_level = min_level;
         this.note = note;
-        this.active = active;
     }
 
     public String getID() {
-        return offer_id;
+        return request_id;
     }
 
     @Override
@@ -27,35 +25,34 @@ public class Offer {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof Offer altro)) {
+        if (!(o instanceof Requests altro)) {
             return false;
         }
-        return this.offer_id.equals(altro.offer_id);
+        return this.request_id.equals(altro.request_id);
     }
 
     @Override
     public int hashCode() {
-        return offer_id.hashCode();
+        return request_id.hashCode();
     }
 
     @Override
     public String toString() {
-        return "Offer{"
-                + "id='" + offer_id + '\''
+        return "Request{"
+                + "id='" + request_id + '\''
                 + ", student_id='" + student_id + '\''
                 + ", skill_id='" + skill_id + '\''
-                + ", level='" + level + '\''
+                + ", min_level='" + min_level + '\''
                 + ", note='" + note + '\''
-                + ", active='" + active + '\''
                 + '}';
     }
 
-    public String getOffer_id() {
-        return offer_id;
+    public String getRequest_id() {
+        return request_id;
     }
 
-    public void setOffer_id(String offer_id) {
-        this.offer_id = offer_id;
+    public void setRequest_id(String request_id) {
+        this.request_id = request_id;
     }
 
     public String getStudent_id() {
@@ -74,12 +71,12 @@ public class Offer {
         this.skill_id = skill_id;
     }
 
-    public String getLevel() {
-        return level;
+    public String getMin_level() {
+        return min_level;
     }
 
-    public void setLevel(String level) {
-        this.level = level;
+    public void setMin_level(String min_level) {
+        this.min_level = min_level;
     }
 
     public String getNote() {
@@ -88,13 +85,5 @@ public class Offer {
 
     public void setNote(String note) {
         this.note = note;
-    }
-
-    public String getActive() {
-        return active;
-    }
-
-    public void setActive(String active) {
-        this.active = active;
     }
 }
